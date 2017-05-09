@@ -1,5 +1,6 @@
 //  task 1 this expression equals 4, change it to equal 42
-console.log(6*8-6);
+console.log(6*6+12-6);
+
 
 //task 2 To convert Celsius to Fahrenheit
 var F;
@@ -9,17 +10,21 @@ function convertFahrenheitToCelsius(c){
 }
 convertFahrenheitToCelsius(12);
 
+
 // task 3 Create a string with the name of your favorite sport. The first letter of the string should be capitalized.
 console.log("Swimming");
+
 
 // task 4 Fix the right side expression so it evaluates to true.
 var answer = "ALL Strings are CrEaTeD equal" == "ALL Strings are CrEaTeD equal";
 
 console.log(answer);
 
+
 //task 5 Build a single string that resembles the following joke.
 var answer ="Why couldn't the shoes go out and play? \n They were all \"tied\" up!";
 console.log(answer);
+
 
 //task 6 Look at the picture below and identify which data type (Numbers, Strings, Booleans) would best represent the highlighted areas.
 LETTER                                                          TYPE
@@ -36,15 +41,18 @@ D - Whether something was "liked" or not.                        boolean
 
 E - 995                                                          numbers
 
+
 //task 7 statement using concatenation
 var  thingOne= "red";
 var thingtwo="blue";
 var thingThree=thingOne.concat(thingtwo);
 console.log(thingThree);
 
+
 //task  8/1
 var fullName= "Bharat chopkar";
 console.log(fullName);
+
 
 //task 8/2
 var bill=10.25 + 3.99 + 7.15;
@@ -52,12 +60,14 @@ var tip=bill*0.15;
 var total=tip+bill;
 console.log(total);
 
+
 //task 8/3
 var adjective1 = "amazing";
 var adjective2 = "fun";
 var adjective3 = "entertaining";
 var midLib= "The Intro to JavaScript course is "+adjective1+". James and Julia are so "+adjective2+". I cannot wait to work through the rest of this "+adjective3+" content!";
 console.log(midLib);
+
 
 //task 9
 var firstName="julia";
@@ -67,12 +77,15 @@ var hobby ="play video games";
 var awesomeMessage="Hi, my name is "+firstName+". I love "+interest+". In my spare time, I like to "+hobby+".";
 console.log(awesomeMessage);
 
+
 //task 10/1
 boolean
+
 
 //task 10/2
 A dragon appears and attacks
  
+
 //task 11/1
 var num=2;
 if(num%2==0){
@@ -80,6 +93,7 @@ if(num%2==0){
 }else{
 	console.log("number :"+num+" is odd");
 }
+
 
 //task 11/2
 var musicians=4;
@@ -97,6 +111,7 @@ if(musicians ==0){
 	console.log("this is a large group");
 
 }
+
 
 //task 12 murder mystery
 var room = "gallery";
@@ -121,6 +136,7 @@ console.log("The"+suspect+" did it in the "+room+" with the "+weapon+".");
 	console.log("murder mystery is unsolved");
 }
 
+
 //task 13 Using the flowchart below checking your balance at the ATM.
 var balance = 325.00;
 var checkBalance = true;
@@ -136,6 +152,7 @@ if(checkBalance = true){
 }else{
 	console.log("your balance is negative pls contact bank");
 }
+
 
 //task 14 
 var flavor = " vanilla";
@@ -189,6 +206,22 @@ if(num % 3==0 && num % 5==0){
 	}
 	num=num+1;
 }	
+
+//task 18/2 
+var num=99;
+while (num>=1){
+
+}
+
+
+
+
+
+
+
+
+
+
 
 //task 19/1
 for (var i = 9;i >= 1 ; i--) {
