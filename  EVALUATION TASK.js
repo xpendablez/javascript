@@ -3,12 +3,10 @@ console.log(6*6+12-6);
 
 
 //task 2 To convert Celsius to Fahrenheit
-var F;
-F=C×1.8+32;
-function convertFahrenheitToCelsius(c){
-	return F=C*1.8+32;
-}
-convertFahrenheitToCelsius(12);
+var fahrenheit;
+var celsius=12;
+fahrenheit=celsius*1.8+32;
+console.log(fahrenheit);
 
 
 // task 3 Create a string with the name of your favorite sport. The first letter of the string should be capitalized.
