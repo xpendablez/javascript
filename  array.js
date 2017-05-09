@@ -37,12 +37,48 @@ var myArray=[15,20,55,28,31,18];
 var str=myToString(myArray);
 console.log(str);
 
-//
+//length
 function myLength(array){
 	return array.length;
 }
-var marray =[15,20,25,30];
-var str=marray.Length
+var myarray =["15","20","25","30"];
+var str=myarray.length;
+myLength(myarray);
+
+//join #
+var myArray=[5,15,25,35,45];
+function myJoin(array,seprator){
+	return array.join(seprator);
+}
+myJoin(myarray,"*");
+
+//concat
+var animal=["tiger","dog","elephant"];
+var fruits=["apple","banana","orange"];
+function myConcat(arg1,arg2){
+	return arg1.concat(arg2);
+}
+myConcat(animal,fruits);
+
+//sort
+var animal=[15,20,80,50];
+function mySort(arg){
+	return arg.sort();
+}
+mySort(animal);
+
+//push
+var animal=["tiger","elephant","rahino"];
+function myPush(arg1,arg2){
+	return arg1.push(arg2); 
+}
+myPush(animal,cat);
+
+
+
+
+
+
 
 
 
