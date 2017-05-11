@@ -197,27 +197,57 @@ if (eatsPlants && !eatsAnimals) {
 }
 console.log(category);
 
+
+
 //task 17
 var education = "no high school diploma";
 var salary;
-if(education=="no high school diploma"){
+var choice =Number(prompt('Enter your choice \n 1.no high school diploma \n 2.a high school diploma \n 3.an Associate\'s\' degree \n 4.a Bachelor\'s\' degree \n 5.a Master\'s\' degree \n 6.a Professional degree \n 7.a Doctoral degree'));
+	console.log("choice : "+choice);
+switch(choice){
+case 1:
+	salary="$25,636";
+	salary.toLocaleString("en-US");
+	education="no high school diploma";
 	console.log("In 2015, a person with "+education+" earned an average of "+salary+"/year.");
-}else if(education=="a high school diploma"){
+    break;
+case 2:
+	salary="$35,256";
+	salary.toLocaleString("en-US");
+	education="a high school diploma";
 	console.log("In 2015, a person with "+education+" earned an average of "+salary+"/year.");
-}else if(education=="an Associate's degree"){
+    break; 
+case 3:
+	salary="$41,496";
+	salary.toLocaleString("en-US");
+	education="an Associate's degree";
 	console.log("In 2015, a person with "+education+" earned an average of "+salary+"/year.");
-}else if(education=="a Bachelor's degree"){
+    break;    
+case 4:
+	salary="$59,124";
+	salary.toLocaleString("en-US");
+	education="a Bachelor's degree";
 	console.log("In 2015, a person with "+education+" earned an average of "+salary+"/year.");
-}else if(education=="a Master's degree"){
+    break;
+case 5:
+	salary="$69,732";
+	salary.toLocaleString("en-US");
+	education="a Master's degree";
 	console.log("In 2015, a person with "+education+" earned an average of "+salary+"/year.");
-}else if(education=="a Professional degree"){
+    break;      
+case 6:
+	salary="$89,960";
+	salary.toLocaleString("en-US");
+	education="a Professional degree";
 	console.log("In 2015, a person with "+education+" earned an average of "+salary+"/year.");
-}else{
-	console.log("In 2015, a person with a Doctoral degree earned an average of "+salary+"/year.");
-}
-switch (choice){
-	case 1:console.log(salary.toLocaleString("$25,636"));
-}
+    break;      
+case 7:
+	salary=" $84,396";
+	salary.toLocaleString("en-US");
+	education=" a Doctoral degree";
+	console.log("In 2015, a person with "+education+" earned an average of "+salary+"/year.");
+    break;                    
+ }	
 
 
 
@@ -285,7 +315,7 @@ for (var k = 0; k < 200; k++) {
 //task 19/4
 var num=12;
 fact=1;
-for (var i=num;i<=num;i++) {
+for (var i=num;i<=num;i--) {
 	fact=fact*i
 }
 
