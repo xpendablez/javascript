@@ -202,55 +202,32 @@ console.log(category);
 //task 17
 var education = "no high school diploma";
 var salary;
-var choice =Number(prompt('Enter your choice \n 1.no high school diploma \n 2.a high school diploma \n 3.an Associate\'s\' degree \n 4.a Bachelor\'s\' degree \n 5.a Master\'s\' degree \n 6.a Professional degree \n 7.a Doctoral degree'));
-	console.log("choice : "+choice);
-switch(choice){
-case 1:
-	salary="$25,636";
-	salary.toLocaleString("en-US");
-	education="no high school diploma";
-	console.log("In 2015, a person with "+education+" earned an average of "+salary+"/year.");
-    break;
-case 2:
-	salary="$35,256";
-	salary.toLocaleString("en-US");
-	education="a high school diploma";
-	console.log("In 2015, a person with "+education+" earned an average of "+salary+"/year.");
-    break; 
-case 3:
-	salary="$41,496";
-	salary.toLocaleString("en-US");
-	education="an Associate's degree";
-	console.log("In 2015, a person with "+education+" earned an average of "+salary+"/year.");
+
+switch(education){
+case "no high school diploma":
+	salary=25636;
+	break;
+case "a high school diploma":
+	salary=35256;
+	break; 
+case "an Associate's degree":
+	salary=41496;
     break;    
-case 4:
-	salary="$59,124";
+case "a Bachelor's degree":
+	salary=59124;
+	break;
+case "a Master's degree":
+	salary=69732;
 	salary.toLocaleString("en-US");
-	education="a Bachelor's degree";
-	console.log("In 2015, a person with "+education+" earned an average of "+salary+"/year.");
-    break;
-case 5:
-	salary="$69,732";
-	salary.toLocaleString("en-US");
-	education="a Master's degree";
-	console.log("In 2015, a person with "+education+" earned an average of "+salary+"/year.");
-    break;      
-case 6:
-	salary="$89,960";
-	salary.toLocaleString("en-US");
-	education="a Professional degree";
-	console.log("In 2015, a person with "+education+" earned an average of "+salary+"/year.");
-    break;      
-case 7:
-	salary=" $84,396";
-	salary.toLocaleString("en-US");
-	education=" a Doctoral degree";
-	console.log("In 2015, a person with "+education+" earned an average of "+salary+"/year.");
-    break;                    
+	break;      
+case "a Professional degree":
+	salary=89960;
+	break;      
+case " a Doctoral degree":
+	salary=84396;
+	break;                    
  }	
-
-
-
+console.log("In 2015, a person with "+education+" earned an average of "+salary.toLocaleString("en-US",{ style: 'currency', currency: 'USD' })+"/year.");
 
 //task 18/1
 var num=1 ;
@@ -299,7 +276,7 @@ while(time>=0){
 
 //task 19/1
 for (var i = 9;i >= 1 ; i--) {
-	console.log("hello"+i);
+	console.log("hello "+i);
 }
 
 //task 19/2
@@ -313,38 +290,114 @@ for (var k = 0; k < 200; k++) {
 }
 
 //task 19/4
-var num=12;
-fact=1;
-for (var i=num;i<=num;i--) {
-	fact=fact*i
+var num=5;
+var fact=1;
+for (var i=num;i>1;i--) {
+	fact=fact*i;
 }
+console.log("The factorial of a number is "+fact);
 
 
 
 //task 19/5
 var seatNo="0-2";
-for (var i=0; i >= 25; i++) {
-	for (var j =1 ; i >= 99; i++) {
-		
+for (var i=0; i <= 25; i++) {
+	for (var j =0 ; j <=99; j++) {
+		console.log(i+" - "+j);
 	}
 }
+
 
 
 //task 20/1
 function laugh(){
 	return "hahahahahahahahahaha!";
 }
-laugh();
+console.log(laugh());
+
 
 //task 20/2
 function laugh(num){
-	var num=1;
+	var str="";
 	for (var i =1; i <=num ; i++) {
-		num+=i;
+		 str +="ha";
 	}
-	return "hi";
+		str +="!";
+		return str;
 }
 console.log(laugh(3));
+
+
+//task 20/3
+o/p =4
+//task 20/4
+
+o/p=2
+
+//task 20/5
+
+undefined Julia
+
+//task 20/6
+function makeLine(length) {
+  var line = "";
+  for (var j = 1; j <= length; j++) {
+    line += "* "
+  }
+  return line + "\n";
+}
+
+function  buildTriangle(width){
+	var triangle="";
+	for(var i=1;i<=width;i++){
+			triangle +=makeLine(i);
+	}
+	return triangle;
+}
+console.log(buildTriangle(5));
+
+
+//task 20/7
+var laugh=function(num){
+	var str="";
+	for (var i =1; i <=num ; i++) {
+		 str +="ha";
+	}
+		str +="!";
+		return str;
+
+}
+console.log(laugh(3))
+
+//task 20/8
+
+var cry =function xyz(){
+	return "boohoo!";
+}
+console.log(cry());
+
+//task 20/9
+function emotions(myString, myFunc) {
+	function myFunc(num){
+	var str="";
+	for (var i =1; i <=num ; i++) {
+		 str +="ha";
+	}
+		str +="!";
+		return str;
+	}
+
+    console.log("I am " + myString + ", " + myFunc(2));
+}
+console.log(emotions("happy",laugh(3)));
+
+
+
+
+
+
+
+
 
 
 
