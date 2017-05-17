@@ -359,6 +359,7 @@ console.log(buildTriangle(5));
 
 //task 20/7
 var laugh=function(num){
+
 	var str="";
 	for (var i =1; i <=num ; i++) {
 		 str +="ha";
@@ -377,64 +378,18 @@ var cry =function xyz(){
 console.log(cry());
 
 //task 20/9
+
 function emotions(myString, myFunc) {
-	function myFunc(num){
+    console.log("I am " + myString + ", " + myFunc(2));
+}
+emotions("happy",function laugh(num){
 	var str="";
 	for (var i =1; i <=num ; i++) {
 		 str +="ha";
 	}
 		str +="!";
-		return str;
-	}
-
-    console.log("I am " + myString + ", " + myFunc(2));
-}
-console.log(emotions("happy",laugh(3)));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	return str;
+})
 
 
 

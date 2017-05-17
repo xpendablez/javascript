@@ -141,91 +141,17 @@ var numbers = [
     [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]
 ];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+for (var i=0; i< numbers.length; i++){
+	for(var j=0; j<numbers[i].length; j++){
+		if(numbers[i][j]%2==0){
+			numbers[i][j]="even";
+		}else{
+			numbers[i][j]="odd";
+		}
+		
+	}
+};
+console.log(numbers)
 
 
 
