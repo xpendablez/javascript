@@ -77,11 +77,3 @@ deleteUser(1);
 console.log("User",user);
 
 
-
-
-
-
-
-
-
-

@@ -69,31 +69,6 @@ mySort(animal);
 
 //push
 var animal=["tiger","elephant","rahino"];
-function myPush(arg1,arg2){
-	return arg1.push(arg2); 
+function myPush(){
+	return animal.push(); 
 }
-myPush(animal,cat);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
