@@ -1,12 +1,12 @@
 
-
+//simple function
 function currancyFormater(amount){
 	return "$"+amount.toFixed(2)
 }
 currancyFormater(23);
 
 
-//
+//simple higher order function
 function square(num,action){
 return "Square :"+ (num*num)+""+action(num);
 }
