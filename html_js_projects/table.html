@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+</style>
+</head>
+<body>
+<form action="action">
+  Name : <input type="text" name="name" placeholder="name"><br>
+  <input type="submit" value="test" >
+  <button type="button" onclick="helloWorld(' Rahul')">Click Me!</button>
+</form>
+<br><br>
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Branch</th> 
+    <th>Score</th>
+  </tr>
+  <tr>
+    <td>Shais</td>
+    <td>IT</td>
+    <td>99</td>
+  </tr>
+  <tr>
+    <td>Rahul</td>
+    <td>ETC</td>
+    <td>90</td>
+  </tr>
+</table>
+</body>
+<script>
+function helloWorld(name){
+   alert("Hello World"+name)
+}
+</script>
+</html>

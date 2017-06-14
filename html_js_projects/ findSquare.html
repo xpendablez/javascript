@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>find Square</title>
+</head>
+<body>
+<h1>Finding square of the number</h1>
+<input id="myNum" type="text" name="num" placeholder="Enter any number">
+<button onclick="square(document.getElementById('myNum').value)">Square</button>
+<button onclick="cube(document.getElementById('myNum').value)">Cube</button><br>
+<label>Result : <span id="result">0</span></label>
+</body>
+<script type="text/javascript">
+
+	function square(num){
+		//var myNum= document.getElementById("myNum").value;
+		//console.log(myNum);
+		//alert("Square of " +num+ " is : "+num*num);
+		//document.getElementById('result').innerHTML=num*num;
+		printResult(num*num);
+	}
+
+	function cube(num){
+		//var myNum= document.getElementById("myNum").value;
+		//console.log(myNum);
+		//alert("Cube of " +num+ " is : "+num*num*num);
+		//document.getElementById('result').innerHTML=num*num*num;
+		printResult(num*num*num);
+	}
+	function printResult(result){
+		document.getElementById('result').innerHTML=result;	
+	}
+	
+</script>
+</html>
