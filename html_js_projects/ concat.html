@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>concatName</title>
+</head>
+<body>
+	<input id="fName" type="text" name="firstName" placeholder="firstName">
+	<input id="lName" type="text" name="lastName" placeholder="lastName">
+	<button onclick="merge(document.getElementById('fName').value,document.getElementById('lName').value)">click</button><br><br>
+	<label>FullName : <span id="fullName"></span></label>
+</body>
+<script type="text/javascript">
+	function merge(firstName,lastName){
+		printFullName(firstName+' '+lastName)
+	}
+	function printFullName(fullName){
+		document.getElementById('fullName').innerHTML=fullName;
+	}
+</script>
+</html>

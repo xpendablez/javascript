@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<script type="text/javascript" src="calc.js"></script>
+	<style type="text/css">
+	button {
+		background -color :#e7e7e7;
+    	border: none;
+    	color: black;
+    	padding: 15px 32px;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 16px;
+    	margin: 4px 2px;
+    	cursor: pointer;
+    	width:100px;
+    }
+    .button4 {
+       	background-color: orange;
+    	color: white;
+    } 
+    .zeroBtn {
+    	width: 16%;
+    }
+    </style>
+    
+</head>
+<body>
+	<form action="action">
+	<input id="num1" type="text" name="num1">
+	<input id="num2" type="text" name="num2">
+	<input id="num3" type="text" name="num3"><br><br>
+	<button type="reset" class="button">C</button>
+	<button class="button">+/-</button>
+	<button class="button">%</button>
+	<button class="button button4"onclick="div(Number(document.getElementById('num1').value),Number(document.getElementById('num2').value))">/</button><br>
+	<button class="button">7</button>
+	<button class="button">8</button>
+	<button class="button">9</button>
+	<button class="button button4" onclick="mul(Number(document.getElementById('num1').value),Number(document.getElementById('num2').value))">*</button><br>
+	<button class="button">4</button>
+	<button class="button">5</button>
+	<button class="button">6</button>
+	<button class="button button4" onclick="sub(Number(document.getElementById('num1').value),Number(document.getElementById('num2').value))">-</button><br>
+	<button class="button">1</button>
+	<button class="button">2</button>
+	<button class="button">3</button>
+	<button class="button button4" onclick="add(Number(document.getElementById('num1').value),Number(document.getElementById('num2').value))">+</button><br>
+	<button class="button zeroBtn">0</button>
+	<button class="button">.</button>
+	<button class="button button4">=</button>
+	</form>
+</body>
+</html>

@@ -4,11 +4,13 @@
 	<title>find Square</title>
 </head>
 <body>
-<h1>Finding square of the number</h1>
-<input id="myNum" type="text" name="num" placeholder="Enter any number">
-<button onclick="square(document.getElementById('myNum').value)">Square</button>
-<button onclick="cube(document.getElementById('myNum').value)">Cube</button><br>
-<label>Result : <span id="result">0</span></label>
+	<h1>Finding square of the number</h1>
+	<input id="myNum" type="text" name="num" placeholder="Enter any number">
+		<button onclick="square(document.getElementById('myNum').value)">Square</button>
+		<button onclick="cube(document.getElementById('myNum').value)">Cube</button><br><br>
+	<input id="power" type="text" name="num" placeholder="power of the number">
+		<button onclick="exponent(document.getElementById('myNum').value,document.getElementById('power').value)">Exponent</button><br><br>
+	<label>Result : <span id="result">0</span></label>
 </body>
 <script type="text/javascript">
 
@@ -26,6 +28,13 @@
 		//alert("Cube of " +num+ " is : "+num*num*num);
 		//document.getElementById('result').innerHTML=num*num*num;
 		printResult(num*num*num);
+	}
+	function exponent(base,exp){
+		var temp = 1;
+		for (var i = 0; i < exp; i++) {
+			temp *= base;
+		}
+		printResult(temp);
 	}
 	function printResult(result){
 		document.getElementById('result').innerHTML=result;	
