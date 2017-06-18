@@ -28,11 +28,11 @@
     
 </head>
 <body>
-	<form action="action">
+	
 	<input id="num1" type="text" name="num1">
 	<input id="num2" type="text" name="num2">
 	<input id="num3" type="text" name="num3"><br><br>
-	<button type="reset" class="button">C</button>
+	<button class="button" onclick="clearScreen(document.getElementById('num1').value='',document.getElementById('num2').value='')">C</button>
 	<button class="button">+/-</button>
 	<button class="button">%</button>
 	<button class="button button4"onclick="div(Number(document.getElementById('num1').value),Number(document.getElementById('num2').value))">/</button><br>
@@ -51,6 +51,6 @@
 	<button class="button zeroBtn">0</button>
 	<button class="button">.</button>
 	<button class="button button4">=</button>
-	</form>
+	
 </body>
 </html>
